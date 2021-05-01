@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="bannerVideo" id="slideShow">
+        <video
+          src="/images/tokyo.mp4"
+          autoplay
+          muted
+          loop
+          class="active"
+        ></video>
+        <video src="/images/paris.mp4" autoplay muted loop></video>
+        <video src="/images/egypt.mp4" autoplay muted loop></video>
+        <video src="/images/maldives.mp4" autoplay muted loop></video>
+      </div>
+      <div class="container">
+        <header id="navbar">
+          <a href="#" class="logo">World</a>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span class="menuIcon" onclick="toggle()"></span>
+        </header>
+        <div class="content">
+          <div class="bannerText" id="slideShowText">
+            <div class="active">
+              <h2>Tokyo</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                itaque nesciunt vero alias corporis iure reprehenderit
+                reiciendis neque tempore a. Corrupti cupiditate optio delectus
+                quae ab quod sapiente nihil ut repellendus, rerum nobis dolorum
+                laudantium numquam neque saepe sequi dolor.
+              </p>
+            </div>
+            <div>
+              <h2>Paris</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                itaque nesciunt vero alias corporis iure reprehenderit
+                reiciendis neque tempore a. Corrupti cupiditate optio delectus
+                quae ab quod sapiente nihil ut repellendus, rerum nobis dolorum
+                laudantium numquam neque saepe sequi dolor.
+              </p>
+            </div>
+            <div>
+              <h2>Egypt</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                itaque nesciunt vero alias corporis iure reprehenderit
+                reiciendis neque tempore a. Corrupti cupiditate optio delectus
+                quae ab quod sapiente nihil ut repellendus, rerum nobis dolorum
+                laudantium numquam neque saepe sequi dolor.
+              </p>
+            </div>
+            <div>
+              <h2>Maldives</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                itaque nesciunt vero alias corporis iure reprehenderit
+                reiciendis neque tempore a. Corrupti cupiditate optio delectus
+                quae ab quod sapiente nihil ut repellendus, rerum nobis dolorum
+                laudantium numquam neque saepe sequi dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="sci">
+          <li>
+            <a href="#"><img src="/images/facebook.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="/images/twitter.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="/images/instagram.png" /></a>
+          </li>
+        </ul>
+        <ul class="controls">
+          <li onclick="prevSlide();prevSlideText()">
+            <img src="/images/left.png" />
+          </li>
+          <li onclick="nextSlide();nextSlideText()">
+            <img src="/images/right.png" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="/index.js"></script>
+  </body>
+</html>
